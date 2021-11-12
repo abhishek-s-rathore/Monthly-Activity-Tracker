@@ -1,0 +1,102 @@
+@import url('./reset.css');
+@import url('./flex.css');
+@import url('./global.css');
+
+/* Custom Styles */
+h1{
+    color: rgb(0,209,178);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem auto;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    margin:0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+form input{
+    flex: 0 1 75%;
+    height: 2rem;
+    border-radius:0;
+    border: 1px solid gray;
+    outline: none;
+    border-top-left-radius:.25rem;
+    border-bottom-left-radius:.25rem;
+    padding-left: .5rem;
+    border-right: none;
+}
+
+form .btn{
+    flex: 0 1 25%;
+    height: 2.25rem;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+}
+
+
+.tracker{
+    box-shadow: rgba(50, 50, 93, 0.35) 0px 10px 20px -20px, rgba(0, 0, 0, 0.35) 0px 30px 60px -30px, rgba(10, 37, 64, 0.45) 0px -2px 6px 0px inset;
+    padding: 1rem;
+    border-radius: .75rem;
+    padding-right: 0;
+    padding-bottom: .25rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.tracker .activity{
+    background-color: rgba(0,209,178, 0.25);
+    border-radius: .2rem;
+    height: 11.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tracker p{
+    color: rgb(0,209,178);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+.tracker .consistancy .dates{
+    color: purple;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid gray;
+    width: 4.4rem;
+    height: 2.2rem;
+    border-radius: .25rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+
+.tracker .consistancy .dates:hover{
+    cursor: pointer;
+}
+
+.delete{
+    position: absolute;
+    right: 1.5rem;
+    bottom: .8rem;
+    color: rgba(255, 0, 0, .5);
+    font-size: 1.25rem;
+}
+
+.delete:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.tracker .consistancy .selectedOne{
+   background-color:  rgb(0,209,178);
+   color: white;
+   box-shadow: rgba(0, 0, 0, 0.6) 1.95px 1.95px 2.6px;
+}
